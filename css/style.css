@@ -9,13 +9,17 @@
 }
 
 * {
-  padding: 0px;
+  padding: 0px;    /* CSS Reset */
   margin: 0px;
   box-sizing: border-box;
   font-family: poppins, sans-serif;
 }
 
-.header {
+body {
+  background-color: var(--color-background);
+}
+
+.header {      /* Header Inicio */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,7 +47,7 @@
   color: var(--color-text-secondary);
 }
 
-.nav-conteudo a:hover {
+.nav-conteudo a:hover {           /* Efeito hover para os links de navegação */
   color: var(--color-highlight);
   transition: 0.5s;
   text-decoration: underline;
@@ -62,8 +66,72 @@
   text-decoration: none;
 }
 
-.btn-contact:hover {
+.btn-contact:hover {       /* Header Fim */
   background-color: var(--color-highlight);
   color: var(--color-header);
-  transition: 0.5s;
+  transition: 0.5s;                 /* Header Fim */
+}        
+
+main {      /* Main Inicio */
+  background-color: var(--color-background);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.foto-perfil {
+  object-fit: cover;
+  width: 500px;
+  border-radius: 2rem;
+  margin-right: 10rem;
+}
+
+.hero-content {
+  max-width: 1000px;
+  margin-left: 10rem;
+}
+
+.hero-text {
+  font-size: 5rem;
+  color: var(--color-text-primary);
+  text-align: justify;
+}
+
+.hero-description {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+  text-align: justify;
+  max-width: 700px;
+}
+
+span {
+  color: var(--color-highlight);
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 3.5rem;
+  border-color: var(--color-highlight);
+  border-radius: 1rem;
+  color: var(--color-highlight);
+  font-size: 1.2rem;
+  background-color: var(--color-header);
+  cursor: pointer;
+  border: var(--color-highlight) 1.4px solid;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero-btn:hover {   /* Efeito Hover para o botão de contato na seção Hero */
+  background-color: var(--color-highlight);
+  color: var(--color-header);
+  transition: 0.5s;  
 }
