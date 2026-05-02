@@ -1,0 +1,14 @@
+:root {
+  --color-background: #111318;
+  --color-header: #16181f;
+  --color-highlight: #a78bfa;
+  --color-text-primary: #fff;
+  --color-text-secondary: #cac4ce;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background: var(--color-background);
+}
