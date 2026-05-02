@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --color-background: #111318;
   --color-header: #16181f;
@@ -10,5 +12,57 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  background: var(--color-background);
+  font-family: poppins, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-header);
+}
+
+.name-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 2rem;
+  max-width: 250px;
+}
+.nav-conteudo {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.nav-conteudo a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+}
+
+.nav-conteudo a:hover {
+  color: var(--color-highlight);
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+.btn-contact {
+  padding: 0.5rem 1.5rem;
+  border-color: var(--color-highlight);
+  border-radius: 1rem;
+  color: var(--color-highlight);
+  font-size: 1rem;
+  margin: 1rem 2rem;
+  background-color: var(--color-header);
+  cursor: pointer;
+  border: var(--color-highlight) 1.4px solid;
+}
+
+.btn-contact:hover {
+  background-color: var(--color-highlight);
+  color: var(--color-header);
+  transition: 0.5s;
 }
