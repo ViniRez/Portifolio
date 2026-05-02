@@ -72,11 +72,11 @@ body {
   transition: 0.5s;                 /* Header Fim */
 }        
 
-main {      /* Main Inicio */
+main {
   background-color: var(--color-background);
 }
 
-.hero {
+.hero {          /* Seção Hero Inicio */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,4 +134,4 @@ span {
   background-color: var(--color-highlight);
   color: var(--color-header);
   transition: 0.5s;  
-}
+}                   /* Seção Hero Fim */
