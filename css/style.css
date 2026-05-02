@@ -59,6 +59,7 @@
   background-color: var(--color-header);
   cursor: pointer;
   border: var(--color-highlight) 1.4px solid;
+  text-decoration: none;
 }
 
 .btn-contact:hover {
