@@ -6,6 +6,7 @@
   --color-highlight: #a78bfa;
   --color-text-primary: #fff;
   --color-text-secondary: #cac4ce;
+  --color-border: hsla(0, 0%, 27%, 0.76);
 }
 
 * {
@@ -24,6 +25,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-header);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .name-logo {
@@ -83,6 +85,7 @@ main {
   min-height: 100vh;
   padding: 0 10px;
   overflow: hidden;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .foto-perfil {
@@ -111,7 +114,7 @@ main {
   max-width: 700px;
 }
 
-span {
+.hero-content span {
   color: var(--color-highlight);
 }
 
@@ -135,3 +138,73 @@ span {
   color: var(--color-header);
   transition: 0.5s;  
 }                   /* Seção Hero Fim */
+
+.projetos {                               /* Seção Projetos Inicio */
+  padding: 0 10px;
+  margin: 6rem 0 2rem 10rem;
+}
+
+.projetos h2 {
+  font-size: 2.5rem;
+  color: var(--color-highlight);
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 48px;
+}
+
+.projetos-card {
+  display: block;
+  text-decoration: none;
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: var(--color-header);
+  max-width: 350px;
+  transition: border-color 0.6s, transform 0.6s;
+}
+
+.projetos-card:hover {     /* Efeito Hover para os cards de projetos */
+  border-color: var(--color-highlight);
+  transition: var(--color-highlight) 0.6s;
+  transform: scale(1.03);
+}
+
+.projetos-card p {
+  color: var(--color-text-secondary);
+  max-width: 270px;
+  text-align: justify;
+}
+
+.projeto-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.projeto-header h3 {
+  color: var(--color-text-primary);
+}
+
+.projeto-header span {
+  color: var(--color-highlight);
+}
+
+.projeto-tags {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  border: 1px solid var(--color-border);
+  border-radius: 1.2rem;
+  padding: 4px 12px;
+  font-size: 12px;
+  color: var(--color-border);
+}                                         /* Seção Projetos Fim */
