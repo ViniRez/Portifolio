@@ -25,8 +25,12 @@
 
 ##  Deploy
 
-Em breve...
+https://vinirez.github.io/Portifolio/
 
-## 📸 Preview
+##  Preview
 
-Em breve...
+![Preview](assets/preview-portifolio.png)
+
+##  Autor
+
+Desenvolvido por mim durante meus estudos de desenvolvimento Web.
