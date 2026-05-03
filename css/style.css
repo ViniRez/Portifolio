@@ -306,3 +306,126 @@ main {
   width: 2rem;
   height: 2rem;
 }                       /*Fim Footer*/
+
+@media (max-width: 1024px) {    /*Responsividade Tablet, Not*/
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 2rem;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .hero-text {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .hero-description {
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+
+  .foto-perfil {
+    width: 100%;
+    max-width: 380px;
+    margin: 2rem auto 0;
+  }
+
+  .projetos h2 {
+    margin: 3rem 0 2rem 2rem;
+  }
+
+  .projetos-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 3rem 2rem 5rem 2rem;
+  }
+
+  .projetos-card {
+    max-width: 100%;
+  }
+
+  .projetos-card p {
+    max-width: 100%;
+  }
+
+  .skills {
+    margin: 3rem 2rem 5rem 2rem;
+    gap: 3rem;
+  }
+
+  .skills-tech {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer h2 {
+    margin: 3rem 0 2rem 2rem;
+  }
+
+  .footer-icons {
+    margin: 0 2rem 0 0;
+  }
+}
+
+@media (max-width: 600px) {     /*Responsividade Mobile*/
+
+  .name-logo {
+    width: 8rem;
+    height: 3rem;
+  }
+
+  .btn-contact {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .nav-conteudo {
+    display: none;
+  }
+
+  .btn-contact {
+    margin: 1rem;
+  }
+
+  .projetos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-tech {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-item {
+    width: 100%;
+  }
+
+  .footer {
+    place-items: center;
+  }
+
+  .footer h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-icons {
+    margin: 3rem 0rem 2rem 4rem;
+  }
+
+  .footer-icons svg {
+    height: 1rem;
+    width: 1rem;
+  }
+}
