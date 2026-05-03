@@ -83,7 +83,6 @@ main {
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  padding: 0 10px;
   overflow: hidden;
   border-bottom: 1px solid var(--color-border);
 }
@@ -91,13 +90,14 @@ main {
 .foto-perfil {
   object-fit: cover;
   width: 500px;
-  border-radius: 2rem;
+  border-radius: 3rem;
   margin-right: 10rem;
 }
 
 .hero-content {
   max-width: 1000px;
   margin-left: 10rem;
+  letter-spacing: 1.2px;
 }
 
 .hero-text {
@@ -139,14 +139,15 @@ main {
   transition: 0.5s;  
 }                   /* Seção Hero Fim */
 
-.projetos {                               /* Seção Projetos Inicio */
-  padding: 0 10px;
-  margin: 6rem 0 2rem 10rem;
+.projetos {
+  border-bottom: 1px solid var(--color-border);
 }
+                               
 
 .projetos h2 {
   font-size: 2.5rem;
   color: var(--color-highlight);
+  margin: 3rem 0 2rem 10rem;
 }
 
 .projetos-grid {
@@ -154,6 +155,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 48px;
+  margin: 3rem 0 5rem 10rem;
 }
 
 .projetos-card {
@@ -208,3 +210,63 @@ main {
   font-size: 12px;
   color: var(--color-text-secondary);
 }                                         /* Seção Projetos Fim */
+
+.skills {         /*Inicio Section Experiencia*/
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  margin: 3rem 0 2rem 10rem;
+  flex-wrap: wrap;
+}
+
+.skills-description {
+max-width: 300px;
+}
+
+.skills-description h2 {
+  color: var(--color-highlight);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.skills-description p {
+  color: var(--color-text-secondary);
+}
+
+.skills-tech {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.skills-item {
+  background-color: var(--color-header);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  width: 12rem;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  transition: border-color 0.6s, transform 0.6s;
+}
+
+.skills-item:hover {   /*Animação Cards Skills*/
+  border-color: var(--color-highlight);
+  transform: scale(1.03s);
+  
+}
+
+.skills-item span {
+  font-size: 1.1rem;
+  color: var(--color-text-primary);
+}
+
+.skills-item svg {   /*Fim Section Experiencia*/
+  width: 1.3rem;
+  height: 1.3rem;
+  flex-shrink: 0;
+}
