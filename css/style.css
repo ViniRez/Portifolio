@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --color-background: #111318;
@@ -10,7 +10,7 @@
 }
 
 * {
-  padding: 0px;    /* CSS Reset */
+  padding: 0px; /* CSS Reset */
   margin: 0px;
   box-sizing: border-box;
   font-family: poppins, sans-serif;
@@ -20,7 +20,8 @@ body {
   background-color: var(--color-background);
 }
 
-.header {      /* Header Inicio */
+.header {
+  /* Header Inicio */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +50,8 @@ body {
   color: var(--color-text-secondary);
 }
 
-.nav-conteudo a:hover {           /* Efeito hover para os links de navegação */
+.nav-conteudo a:hover {
+  /* Efeito hover para os links de navegação */
   color: var(--color-highlight);
   transition: 0.5s;
   text-decoration: underline;
@@ -68,23 +70,26 @@ body {
   text-decoration: none;
 }
 
-.btn-contact:hover {       /* Header Fim */
+.btn-contact:hover {
+  /* Header Fim */
   background-color: var(--color-highlight);
   color: var(--color-header);
-  transition: 0.5s;                 /* Header Fim */
-}        
+  transition: 0.5s; /* Header Fim */
+}
 
 main {
   background-color: var(--color-background);
 }
 
-.hero {          /* Seção Hero Inicio */
+.hero {
+  /* Seção Hero Inicio */
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
   overflow: hidden;
   border-bottom: 1px solid var(--color-border);
+  flex-direction: row-reverse;
 }
 
 .foto-perfil {
@@ -103,14 +108,12 @@ main {
 .hero-text {
   font-size: 5rem;
   color: var(--color-text-primary);
-  text-align: justify;
 }
 
 .hero-description {
   margin-top: 1rem;
   font-size: 1.2rem;
   color: var(--color-text-secondary);
-  text-align: justify;
   max-width: 700px;
 }
 
@@ -133,16 +136,16 @@ main {
   text-transform: uppercase;
 }
 
-.hero-btn:hover {   /* Efeito Hover para o botão de contato na seção Hero */
+.hero-btn:hover {
+  /* Efeito Hover para o botão de contato na seção Hero */
   background-color: var(--color-highlight);
   color: var(--color-header);
-  transition: 0.5s;  
-}                   /* Seção Hero Fim */
+  transition: 0.5s;
+} /* Seção Hero Fim */
 
 .projetos {
   border-bottom: 1px solid var(--color-border);
 }
-                               
 
 .projetos h2 {
   font-size: 2.5rem;
@@ -166,10 +169,13 @@ main {
   padding: 1.5rem;
   background-color: var(--color-header);
   max-width: 350px;
-  transition: border-color 0.6s, transform 0.6s;
+  transition:
+    border-color 0.6s,
+    transform 0.6s;
 }
 
-.projetos-card:hover {     /* Efeito Hover para os cards de projetos */
+.projetos-card:hover {
+  /* Efeito Hover para os cards de projetos */
   border-color: var(--color-highlight);
   transition: var(--color-highlight) 0.6s;
   transform: scale(1.03);
@@ -209,24 +215,25 @@ main {
   padding: 4px 12px;
   font-size: 12px;
   color: var(--color-text-secondary);
-}                                         /* Seção Projetos Fim */
+} /* Seção Projetos Fim */
 
-.skills {         /*Inicio Section Experiencia*/
+.skills {
+  /*Inicio Section Experiencia*/
   display: flex;
   align-items: center;
   gap: 10rem;
-  margin: 3rem 0 2rem 10rem;
+  margin: 3rem 0 5rem 10rem;
   flex-wrap: wrap;
 }
 
 .skills-description {
-max-width: 300px;
+  max-width: 300px;
 }
 
 .skills-description h2 {
   color: var(--color-highlight);
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .skills-description p {
@@ -251,13 +258,15 @@ max-width: 300px;
   width: 12rem;
   padding: 0.8rem 1rem;
   cursor: pointer;
-  transition: border-color 0.6s, transform 0.6s;
+  transition:
+    border-color 0.6s,
+    transform 0.6s;
 }
 
-.skills-item:hover {   /*Animação Cards Skills*/
+.skills-item:hover {
+  /*Animação Cards Skills*/
   border-color: var(--color-highlight);
   transform: scale(1.03s);
-  
 }
 
 .skills-item span {
@@ -265,8 +274,35 @@ max-width: 300px;
   color: var(--color-text-primary);
 }
 
-.skills-item svg {   /*Fim Section Experiencia*/
+.skills-item svg {
+  /*Fim Section Experiencia*/
   width: 1.3rem;
   height: 1.3rem;
   flex-shrink: 0;
 }
+
+.footer {             /*Inicio Footer*/
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--color-border);
+  padding-right: 5rem;
+  background-color: var(--color-header);
+}
+
+.footer h2 {
+  color: var(--color-highlight);
+  font-size: 2.5rem;
+  margin: 3rem 0 2rem 10rem;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 10rem 0 0;
+}
+
+.footer svg {
+  width: 2rem;
+  height: 2rem;
+}                       /*Fim Footer*/
