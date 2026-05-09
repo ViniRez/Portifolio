@@ -11,7 +11,7 @@
 ## 🛠️ Próximas melhorias
 
 - [x] Hospedagem no GitHub Pages
-- [ ] Menu hambúrguer para mobile
+- [x] Menu hambúrguer para mobile
 - [ ] Animações de entrada nas seções
 - [ ] Modo claro/escuro
 - [ ] Formulário de contato funcional
