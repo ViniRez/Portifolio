@@ -369,7 +369,7 @@ main {
   }
 
   .nav-conteudo {
-    display: none; /* mantenha o que você já tem */
+    display: none;
   }
 
   .navbar {
